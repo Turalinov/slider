@@ -1,43 +1,81 @@
-* {
-  box-sizing: border-box;
-}
-
-body, html, ul{
+/* это правило включать необязательно */
+body, html {
   margin: 0;
   padding: 0;
 }
 
-.services {}
+/* это правило включать необязательно  конец строки*/
 
-.container {
-  max-width: 1400px;
+
+.services * {
+  box-sizing: content-box;
+}
+
+.services ul {
+  margin: 0;
+  padding: 0;
+}
+
+.services .container {
+  border: 1px solid red;
+  height: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-.services__slider.swiper {
-  margin-bottom: 20px;
+
+
+.services__slider-wrap {
 }
 
-.services__list.swiper-wrapper {}
+@media screen and (max-width: 768px) {
+/*  */
+}
+
+.services__slider.swiper {
+  width: 1080px;
+  margin-bottom: 40px;
+}
+
+.services__list.swiper-wrapper {
+}
 
 .services__item.swiper-slide {
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  height: 200px;
+  height:  500px;
 }
 
 .services__item-elem {
+  overflow: hidden;
   height: 100%;
-  width: 32%;
+  width: calc(100%/3);
   background-color: green;
   color: white;
   font-size: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  
-  
+   
+}
+
+.services__item-elem+.services__item-elem{
+  margin-left: 30px;
+}
+
+
+.services__item-elem-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.services__item-elem:nth-child(1){
+  border-radius: 200px 0 0 0;
+}
+
+.services__item-elem:nth-child(3) {
+  border-radius: 0 200px 0 0;
 }
 
 .services__btns {
@@ -57,5 +95,12 @@ body, html, ul{
 
 .services .swiper-button-next:after,
 .services .swiper-button-prev:after {
-  color: #fff;
+  color: #000;
+}
+.services .swiper-button-prev {
+  left: -70px;
+}
+
+.services .swiper-button-next {
+  right: -70px;
 }

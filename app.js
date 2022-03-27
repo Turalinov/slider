@@ -7,13 +7,17 @@
         prevEl: '.swiper-button-prev',
       },
 
-
     // количество слайдов на просмотр (слайды, видимые одновременно в контейнере слайдера).
     slidesPerView: 1, // 4
 
+    
+        slidesOffsetBefore: 0,
+        slidesOffsetAfter: 0,
 
     //скорость переключения слайдов
     speed: 800,
+        //оступ между слайдами
+        spaceBetween: 0,
 
   });
 
