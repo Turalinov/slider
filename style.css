@@ -54,3 +54,8 @@ body, html, ul{
   margin-top: 5px;
 }
 
+
+.services .swiper-button-next:after,
+.services .swiper-button-prev:after {
+  color: #fff;
+}

@@ -1,6 +1,12 @@
 (function () {
   const servicesSwiper = new Swiper('.services__slider ', {
 
+    // Стрелки
+       navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
 
     // количество слайдов на просмотр (слайды, видимые одновременно в контейнере слайдера).
     slidesPerView: 1, // 4
