@@ -26,15 +26,15 @@ body, html {
 
 
 .services__slider-wrap {
-}
-
-@media screen and (max-width: 768px) {
-/*  */
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 40px;
 }
 
 .services__slider.swiper {
-  width: 1080px;
-  margin-bottom: 40px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .services__list.swiper-wrapper {
@@ -45,6 +45,17 @@ body, html {
   width: 100%;
   height:  500px;
 }
+
+@media screen and (max-width: 1140px) {
+  .services__item.swiper-slide {
+    height: 300px;
+  }
+
+  .services .container {
+    margin: 0 40px;
+  }
+}
+
 
 .services__item-elem {
   overflow: hidden;
@@ -63,6 +74,22 @@ body, html {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 700px) {
+  .services__item.swiper-slide {
+    height: 130px;
+  }
+
+  .services__item-elem+.services__item-elem {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .services .container {
+    margin: 0 15px;
+  }
+}
 
 .services__item-elem-img {
   width: 100%;
@@ -81,10 +108,18 @@ body, html {
 .services__btns {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.services__btns h1 {
+  align-self: center;
 }
 
 
 .services__btn {
+  align-self: center;
   color: blue;
 }
 
@@ -98,9 +133,9 @@ body, html {
   color: #000;
 }
 .services .swiper-button-prev {
-  left: -70px;
+  left: 0;
 }
 
 .services .swiper-button-next {
-  right: -70px;
+  right: 0;
 }
