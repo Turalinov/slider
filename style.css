@@ -42,19 +42,15 @@ body, html, ul{
 
 .services__btns {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 
 .services__btn {
-  background-color: rgb(189, 139, 45);
-  color: #fff;
-  padding: 10px;
-  text-decoration: none;
+  color: blue;
 }
 
 .services__btn+.services__btn {
-  margin-left: 20px;
+  margin-top: 5px;
 }
 
